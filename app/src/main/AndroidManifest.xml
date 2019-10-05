@@ -14,13 +14,13 @@
         <activity android:name=".Sign_upActivity"/>
         <activity android:name=".welcome"/>
         <activity android:name=".SignInAcvtivity"/>
-       <activity android:name=".main">
-           <intent-filter>
-               <action android:name="android.intent.action.MAIN"/>
+       <activity android:name=".main"/>
+        <activity android:name=".App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
-               <category android:name="android.intent.category.LAUNCHER"/>
-           </intent-filter>
-
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
