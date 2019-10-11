@@ -14,4 +14,12 @@ interface ApiService {
         @Field("password") password:String
     ): Call<RegisterData>
 
+    @POST("login")
+    @FormUrlEncoded
+    @Headers("Accept: application/json")
+    fun login(
+        @Field("email") email:String,
+        @Field("password") password:String
+    ): Call<loginData>
+
 }
