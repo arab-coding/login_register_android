@@ -1,8 +1,8 @@
 package com.ih.ali.API
 
-data class RegisterData(var name:String, var email:String , var api_token:String)
+data class RegisterData(var id:Int , var name:String, var email:String , var api_token:String)
 
-data class loginData(var name:String, var email:String , var api_token:String)
+data class loginData(var id:Int , var name:String, var email:String , var api_token:String)
 
 //
 //{
