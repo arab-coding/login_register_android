@@ -1,5 +1,6 @@
 package com.ih.ali.API
 
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -21,5 +22,13 @@ interface ApiService {
         @Field("email") email:String,
         @Field("password") password:String
     ): Call<loginData>
+
+    @POST("logout")
+    @FormUrlEncoded
+    @Headers("Accept: application/json")
+    fun logout(
+        @Field("api_token") token:String
+
+    ): Call<ResponseBody>
 
 }
